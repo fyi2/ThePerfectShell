@@ -6,10 +6,17 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET"/>
 
+
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-permission android:name="com.example.permission.MAPS_RECEIVE" />
+
     <application>
 
     <meta-data
-        android:name="com.google.android.geo.API_KEY"
+        android:name="com.google.android.maps.v2.API_KEY"
         android:value="AIzaSyBQACHL9D0FuZ5cBIocNuWpl_F5KzS7OdI" />
 
         android:allowBackup="true"

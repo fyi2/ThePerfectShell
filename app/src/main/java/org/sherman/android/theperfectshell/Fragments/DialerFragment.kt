@@ -22,4 +22,5 @@ class DialerFragment : Fragment() {
         return inflater!!.inflate(R.layout.fragment_dialer, container, false)
     }
 
-}// Required empty public constructor
+}
+
