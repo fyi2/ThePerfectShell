@@ -4,10 +4,40 @@
     android:layout_height="match_parent"
     tools:context="org.sherman.android.theperfectshell.Fragments.RecyclerFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnToDo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To Do"
+            android:clickable="true"
+            android:onClick="addToDo"
+            android:paddingTop="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/btnToDo"
+            android:background="@color/colorAccent">
+
+        </android.support.v7.widget.RecyclerView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:clickable="true"
+            android:onClick="deleteToDo"
+            android:textSize="24sp"
+            android:shadowColor="@color/colorAccent"
+            android:layout_below="@id/rvRecyclerView"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
 
 </FrameLayout>

@@ -6,8 +6,8 @@
     <string name="menu_tabs">Tab Display</string>
     <string name="menu_fragments">Fragment Display</string>
     <string name="menu_recycler">Recyler-Async</string>
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Closed</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

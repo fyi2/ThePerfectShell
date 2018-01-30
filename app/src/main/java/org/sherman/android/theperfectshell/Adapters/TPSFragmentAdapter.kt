@@ -13,13 +13,13 @@ import org.sherman.android.theperfectshell.Fragments.TpsPage3Fragment
  */
 class TPSFragmentAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm){
 
-    override fun getItem(position: Int): Fragment {
+    override fun getItem(position: Int): Fragment? {
         when(position){
             0 -> return TpsPage1Fragment()
             1 -> return TpsPage2Fragment()
             2 -> return TpsPage3Fragment()
+            else -> return null
         }
-        return TpsBottomFragment()
     }
 
     override fun getCount(): Int {
